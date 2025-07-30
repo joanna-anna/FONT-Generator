@@ -1,5 +1,5 @@
 body {
-  background-color: beige;
+  background-color: #d2e0e1;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -21,7 +21,7 @@ h1 {
   font-weight: 800;
   font-size: 36px;
   line-height: 1.5;
-  color: #272048;
+  color: #7c1f7a;
 }
 
 footer {
@@ -30,12 +30,11 @@ footer {
   font-size: 13px;
 }
 a {
-  background-color: #272048;
+  color: #7c1f7a;
 }
 .container {
   margin: 120px auto;
   max-width: 600px;
-  background-color: antiquewhite;
 }
 .instructions {
   padding: 10px;
@@ -49,7 +48,7 @@ a {
 
 .submit-button {
   margin-left: 10px;
-  background-color: #272048;
+  background-color: #c9b4dd;
   color: azure;
   border: none;
   width: 150px;

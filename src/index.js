@@ -1,5 +1,4 @@
 function displayFont(response) {
-  console.log("Font combination found");
   new Typewriter("#font", {
     strings: response.data.answer,
     autoStart: true,
@@ -49,10 +48,6 @@ Follow user instructions strictly.`;
   let fontElement = document.querySelector("#font");
   fontElement.classList.remove("hidden");
   fontElement.innerHTML = `<div class="blinking">⏳ Searching for the best font match for you about ${instructionsInput.value}</>`;
-
-  console.log("Searching for a font");
-  console.log(`prompt:${prompt}`);
-  console.log(`context:${context}`);
 
   axios.get(apiUrl).then(displayFont);
 }

@@ -16,19 +16,22 @@
       </header>
 
       <main>
-        <form id="font-generation">
-          <input
-            type="text"
-            placeholder="Enter font usage (website, app, ect.)"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="suggested-font" id="font"></div>
+        <div class="form-conteiner">
+          <form id="font-generation">
+            <input
+              type="text"
+              placeholder="Enter font usage "
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: website about flowers, weather app, ect.</div>
+        </div>
+        <div class="suggested-font hidden" id="font"></div>
       </main>
 
       <footer>

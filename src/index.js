@@ -46,6 +46,10 @@ Follow user instructions strictly.`;
 
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let fontElement = document.querySelector("#font");
+  fontElement.classList.remove("hidden");
+  fontElement.innerHTML = `<div class="blinking">⏳ Searching for the best font match for you about ${instructionsInput.value}</>`;
+
   console.log("Searching for a font");
   console.log(`prompt:${prompt}`);
   console.log(`context:${context}`);

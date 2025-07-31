@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Font Generator for Designers</title>
   </head>
@@ -14,7 +15,7 @@
       </header>
 
       <main>
-        <form>
+        <form id="font-generation">
           <input
             type="text"
             placeholder="Enter the topic of the search"
@@ -25,7 +26,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="suggested-font">The suggestion will come here</div>
+        <div class="suggested-font" id="font"></div>
       </main>
 
       <footer>

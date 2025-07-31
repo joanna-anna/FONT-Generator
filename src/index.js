@@ -47,7 +47,7 @@ Follow user instructions strictly.`;
 
   let fontElement = document.querySelector("#font");
   fontElement.classList.remove("hidden");
-  fontElement.innerHTML = `<div class="blinking">⏳ Searching for the best font match for you about ${instructionsInput.value}</>`;
+  fontElement.innerHTML = `<div class="blinking">⏳ Searching for the best font match for you about ${instructionsInput.value}</div>`;
 
   axios.get(apiUrl).then(displayFont);
 }

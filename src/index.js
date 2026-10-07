@@ -5,7 +5,7 @@ function displayFont(response) {
     .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
   
   new Typewriter("#font", {
-    strings: response.data.answer,
+    strings: formattedAnswer,
     autoStart: true,
     delay: 1,
     cursor: "",
@@ -39,7 +39,6 @@ Requirements:
 - Fonts must be suitable for digital use, highly legible, visually compatible, and preferably available on Google Fonts.
 - Follow user instructions strictly.`;
 
-Follow user instructions strictly.`;
 
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
